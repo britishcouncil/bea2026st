@@ -1,0 +1,7 @@
+track,split,pred_file,L1,rmse,pearson
+open,dev,baseline_open_xx.csv,es,1.2060841866514214,0.787306348445452
+open,dev,baseline_open_xx.csv,de,1.1486658737533606,0.8003900093884458
+open,dev,baseline_open_xx.csv,cn,1.0213964262014545,0.8042396463775819
+closed,dev,baseline_closed_cn.csv,cn,1.1748474074893016,0.7355269731583322
+closed,dev,baseline_closed_de.csv,de,1.3282551918812926,0.7530299049691511
+closed,dev,baseline_closed_es.csv,es,1.3569219828224213,0.7484207308555739

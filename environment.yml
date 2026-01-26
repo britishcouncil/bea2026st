@@ -1,0 +1,15 @@
+name: baseline_env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pytorch>=2.0
+  - accelerate>=0.26
+  - transformers>=4.35
+  - datasets>=2.14
+  - numpy>=1.23
+  - pandas>=2.0
+  - scipy>=1.10
+  - scikit-learn>=1.3
