@@ -69,6 +69,7 @@ baseline_open_xx cn 1.021    0.804
 │   │   |   ├── cn/baseline_closed_cn_preds.csv
 ├── results/
 │   ├── results_summary_dev.csv
+│   ├── results_summary_test.md
 ├── logs/
 ├── finetune.py           
 ├── predict.py            
@@ -84,6 +85,7 @@ baseline_open_xx cn 1.021    0.804
   * `model_parameters.csv` - Metadata and hyperparameters for each baseline model.
 * `predictions/` Model predictions (CSV files) organized by track type (`open`, `closed`), dataset split (`train`, `dev`), and L1 (`es`, `de`, `cn`).
 * `results/results_summary_dev.csv` Evaluation outputs (CSV files) reporting RMSE and Pearson correlation for all models and L1s, evaluated on the `dev` sets.
+* `results/results_summary_test.md` Evaluation outputs (Markdown) reporting RMSE and Pearson correlation for all submissions to the shared task, evaluated on the `test` sets.
 * `logs/` Folder for timestamped log files.
 * Scripts:
   * `download.py` Downloads HF transformer models.
@@ -108,7 +110,7 @@ The training, development and test datasets are provided as a set of CSV files, 
 * `en_target_clue` A partial-spelling clue of the English target word.
 * `L1_source_word` The corresponding L1 source word(s).
 * `L1_context` The L1 contextualising prompt.
-* `GLMM_score` The GLMM difficulty estimate for the vocabulary test item, as reported by [Schmitt et al. (2024)](https://www.britishcouncil.org/research-insight/knowledge-based-vocabulary-lists), where a **lower score indicates a more difficult word**. This is the target value that will be predicted. **Note:** The `GLMM_score` is not provided for the test datasets. 
+* `GLMM_score` The GLMM difficulty estimate for the vocabulary test item, as reported by [Schmitt et al. (2024)](https://www.britishcouncil.org/research-insight/knowledge-based-vocabulary-lists), where a **lower score indicates a more difficult word**. This is the target value that will be predicted.
 ---
 
 ## Model Parameters File
